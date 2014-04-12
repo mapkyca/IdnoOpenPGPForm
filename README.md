@@ -10,7 +10,7 @@ Installation
 ------------
 
  * Install into your IdnoPlugins directory and activate it in the plugins setting 
-   panel (if you're cloning, make sure you use the --recursive flag in order to get submodules.
+   panel.
  * Generate your keys using gnupg on your server (with no password), make sure your .gnupg directory is not web readable.
    Note: On Debian www-data's home directory is /var/www, which is generally web readable. It is recommended you 
    either change this, or limit access via config. 
