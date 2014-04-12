@@ -11,7 +11,7 @@ if (\Idno\Core\site()->config()->openpgpPublicKey) {
 	    var serialized = $(this).serialize();
 	    var openpgp = window.openpgp;
 	    
-	    var publickey = openpgp.key.readArmored("<?= str_replace("\n","", \Idno\Core\site()->config()->openpgpPublicKey);?>");
+	    var publickey = openpgp.key.readArmored("<?= str_replace("\n","\\n\"+\"", \Idno\Core\site()->config()->openpgpPublicKey);?>");
 	    var pgpMessage = openpgp.encryptMessage(publickey.keys, serialized);
 	    
 	    $(this).html("<textarea name=\"__encrypted_form_data\" style=\"display: none;\">" + pgpMessage + "</textarea>");
