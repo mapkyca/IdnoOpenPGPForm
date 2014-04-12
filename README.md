@@ -11,7 +11,9 @@ Installation
 
  * Install into your IdnoPlugins directory and activate it in the plugins setting 
    panel (if you're cloning, make sure you use the --recursive flag in order to get submodules.
- * Generate your keys using gnupg on your server, make sure your .gnupg directory is not web readable
+ * Generate your keys using gnupg on your server (with no password), make sure your .gnupg directory is not web readable.
+   Note: On Debian www-data's home directory is /var/www, which is generally web readable. It is recommended you 
+   either change this, or limit access via config. 
  * Set your public key in your config.ini
 
 What this is for
@@ -30,7 +32,9 @@ web plugin can do about that.
 What this is not for
 --------------------
 
-This is not a replacement for HTTPS! HTTPS ensures that your page has not been tampered with, so you'll
+This is not a replacement for HTTPS! 
+
+HTTPS ensures that your page has not been tampered with, so you'll
 still need to deploy your page - and openpgp.js - over HTTPS to ensure the page hasn't been modified.
 
 
