@@ -45,7 +45,8 @@
 
 			// Add the encrypted payload
 			foreach ($output as $key => $value) {
-			    \Idno\Core\site()->currentPage()->setInput($key, $value);
+			    $_REQUEST[$key] = $value;
+			    //\Idno\Core\site()->currentPage()->setInput($key, $value);
 			}
 
 		    }
