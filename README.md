@@ -39,8 +39,8 @@ still need to deploy your page - and openpgp.js - over HTTPS to ensure the page 
 
 TODO
 ----
-[ ] Find a way of doing pgp on the server without calling an external executable
-[ ] Research a way of guarding against HTTP only page modification
+- [ ] Find a way of doing pgp on the server without calling an external executable
+- [ ] Research a way of guarding against HTTP only page modification
 
 Licence
 -------
