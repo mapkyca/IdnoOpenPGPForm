@@ -37,6 +37,10 @@ This is not a replacement for HTTPS!
 HTTPS ensures that your page has not been tampered with, so you'll
 still need to deploy your page - and openpgp.js - over HTTPS to ensure the page hasn't been modified.
 
+TODO
+----
+[ ] Find a way of doing pgp on the server without calling an external executable
+[ ] Research a way of guarding against HTTP only page modification
 
 Licence
 -------
