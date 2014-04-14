@@ -1,8 +1,5 @@
-<script src="<?= \Idno\Core\site()->config()->url; ?>IdnoPlugins/OpenPGPForm/vendor/openpgp.min.js"></script>
-<script src="<?= \Idno\Core\site()->config()->url; ?>IdnoPlugins/OpenPGPForm/vendor/openpgp.worker.min.js"></script>
-
 <?php 
-if (\Idno\Core\site()->config()->openpgpPublicKey) {
+if ((\Idno\Core\site()->config()->openpgpPublicKey) && (\Idno\Core\site()->plugins->get('OpenPGPJS'))) {
     ?>
 <script>
     $(document).ready(function() {
