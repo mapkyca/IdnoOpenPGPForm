@@ -47,7 +47,11 @@ Licence
 
 Released under the Apache 2.0 licence: http://www.apache.org/licenses/LICENSE-2.0.html
 
+Requires
+--------
+* OpenPGP Idno wrapper <https://github.com/mapkyca/IdnoOpenPGPJS>
+
 See
 ---
  * Author: Marcus Povey <http://www.marcus-povey.co.uk> 
-
+ * OpenPGP.js <http://openpgpjs.org/>
