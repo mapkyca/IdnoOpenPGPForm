@@ -8,6 +8,14 @@
 	     * @param type $data
 	     */
 	    private function decrypt($data) {
+		
+		$gpg = new \gnupg();
+		
+		if ($return = $gpg->decrypt($data))
+			return $return;
+		    
+		/*
+		
 		$gpg = \Idno\Core\site()->config()->opengpg_gnupg ? \Idno\Core\site()->config()->opengpg_gnupg : '/usr/bin/gpg';
 		
 		$command = "echo ". escapeshellarg($data) . " | $gpg --trust-model always --batch --yes -d";
@@ -20,6 +28,7 @@
 		if ($return == 0) {
 		    return $result;
 		}
+		*/
 		
 		return false;
 	    }
